@@ -108,7 +108,7 @@ savePNGButton.addEventListener("click", function (event) {
 
 saveJPGButton.addEventListener("click", function (event) {
   if (signaturePad.isEmpty()) {
-    alert("Please provide a signature first.");
+    alert("Coloca tu firma para continuar.");
   } else {
     var dataURL = signaturePad.toDataURL("image/jpeg");
     download(dataURL, "signature.jpg");
@@ -117,7 +117,7 @@ saveJPGButton.addEventListener("click", function (event) {
 
 saveSVGButton.addEventListener("click", function (event) {
   if (signaturePad.isEmpty()) {
-    alert("Please provide a signature first.");
+    alert("Coloca tu firma para continuar.");
   } else {
     var dataURL = signaturePad.toDataURL('image/svg+xml');
     download(dataURL, "signature.svg");
